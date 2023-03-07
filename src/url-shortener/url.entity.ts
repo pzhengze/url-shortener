@@ -6,11 +6,8 @@ export class Url {
     id: number;
 
     @Column()
-    hash: string;
+    shortUrl: string;
 
     @Column()
     url: string;
-
-    @Column()
-    shortUrl: string;
 }
