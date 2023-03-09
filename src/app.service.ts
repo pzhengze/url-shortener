@@ -24,7 +24,7 @@ export class AppService {
             throw new BadRequestException('Must be a valid URL!');
         }
 
-        const baseUrl = 'shortenurl.up.railway.app';
+        const baseUrl = process.env.baseUrl;
 
         try {
             let urlObj = await this.urls.findOneBy({ url });
