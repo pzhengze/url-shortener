@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Url } from './url-shortener/url.entity';
-import { UrlShortenerModule } from './url-shortener/url-shortener.module';
+import { Url } from './url/url.entity';
 
 @Module({
     imports: [
@@ -13,7 +12,7 @@ import { UrlShortenerModule } from './url-shortener/url-shortener.module';
             entities: [Url],
             synchronize: true,
         }),
-        UrlShortenerModule,
+        TypeOrmModule.forFeature([Url]),
     ],
     controllers: [AppController],
     providers: [AppService],
