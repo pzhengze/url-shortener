@@ -6,8 +6,8 @@ import {
 } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Url } from './url/url.entity';
-import { UrlDto } from './url/dtos/url.dto';
+import { Url } from './entities/url.entity';
+import { UrlDto } from './dtos/url.dto';
 import { nanoid } from 'nanoid';
 import { isURL } from 'class-validator';
 
