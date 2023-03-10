@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Submission for GovTech GoWhere Internship Tech Test. This is a url shortener made with NestJs and is deployed over [here](https://shortenurl.up.railway.app/). A ReactJS frontend is also done [here](https://github.com/pzhengze/url-shortener-frontend) and deployed [here](shortenurlfrontend.up.railway.app).
 
 ## Installation
 
